@@ -1,0 +1,144 @@
+{
+    "_type": "link",
+    "byproducts": {
+        "stderr": "",
+        "stdout": ""
+    },
+    "command": [
+        "node",
+        "/home/santiago/Documents/p2017/in-toto-general/docker-demo/webapp/node_modules/eslint/bin/eslint.js",
+        "webapp/src/"
+    ],
+    "materials": {},
+    "name": "tag-webap",
+    "products": {
+        "webapp/.eslintrc.json": {
+            "sha256": "7d4d5a3a17e2dd3a717f8848f3e90a376ded892f3a9805efbf6166cd7ae440d8"
+        },
+        "webapp/README.md": {
+            "sha256": "3b6d1073c6cc1078912f91fd6b48bb76aba622e678199e4db2557ce42e45d68d"
+        },
+        "webapp/build/apache.png": {
+            "sha256": "277c6fb3fc56b7de17e54972f9cd82270a65dc59b99751f75522ed36ddde2364"
+        },
+        "webapp/build/asset-manifest.json": {
+            "sha256": "2539a91ee5032d26ed2d83242f844ca9654f87fb4ce17b2a66deae5d8e614f8c"
+        },
+        "webapp/build/debian.png": {
+            "sha256": "3bf11a7765b541082de1617a7063aa65854118047e4bffcac0681ab25855f0cd"
+        },
+        "webapp/build/docker.png": {
+            "sha256": "dd82202019d2bbc0296a655c19c05c58db40df9410b0ef2d1581e3d1e02e3550"
+        },
+        "webapp/build/eslint.png": {
+            "sha256": "033afba67b76ab1dc893b9d0c9ab67b86ff598c70b93d5ced11967bd2a3514e8"
+        },
+        "webapp/build/favicon.ico": {
+            "sha256": "9b2e9a38da573b5451663ee16c1baf6c0ce130e784851e71d967f9ef458e3b53"
+        },
+        "webapp/build/index.html": {
+            "sha256": "ddb1a359af84df2a5ee2f4fa654d0406f38149302d4d23df3f7dda27e12a33ab"
+        },
+        "webapp/build/logo.png": {
+            "sha256": "3a62d3f913e5e6f6b1c27d3baf2f1a6b8dd6634f928b9b2ccd2ac830f9320c62"
+        },
+        "webapp/build/react.png": {
+            "sha256": "112c51b6b10e40c4faf29a42206b48eb2373a355936c2a049ca14b534154860f"
+        },
+        "webapp/build/sad-docker.xcf": {
+            "sha256": "a3e33146eeb01ccaf72328f9196bc259285e6d2369d2c2791530693effd73b68"
+        },
+        "webapp/build/static/css/main.58bfa052.css": {
+            "sha256": "f849e727863792504b9ea5efd5b8168dbb4f376f21b58f078d6a325c8dbc417c"
+        },
+        "webapp/build/static/css/main.58bfa052.css.map": {
+            "sha256": "d75cafa180bb7b40626499082a5013ec49cf3148305b679fbdcde190effabcdd"
+        },
+        "webapp/build/static/js/main.416aa9d0.js": {
+            "sha256": "297845fb3af5c7258ad28df1630143ced872de8b3c46fb14a5ff0ba1f1095fae"
+        },
+        "webapp/build/static/js/main.416aa9d0.js.map": {
+            "sha256": "186aab8770f3df6bab180a0f705ea32d3750d51ecaad1076840b7560f4921b34"
+        },
+        "webapp/package-lock.json": {
+            "sha256": "d2fe01a91fbd76ef9165d0e03e03d97fe1991cb5d7ca1fa4b611316c7c822334"
+        },
+        "webapp/package.json": {
+            "sha256": "c67c240f3c109e50f02f09406278a80b4a9daaaa7b7090f752640c4b719ac4be"
+        },
+        "webapp/public/apache.png": {
+            "sha256": "277c6fb3fc56b7de17e54972f9cd82270a65dc59b99751f75522ed36ddde2364"
+        },
+        "webapp/public/debian.png": {
+            "sha256": "3bf11a7765b541082de1617a7063aa65854118047e4bffcac0681ab25855f0cd"
+        },
+        "webapp/public/docker.png": {
+            "sha256": "dd82202019d2bbc0296a655c19c05c58db40df9410b0ef2d1581e3d1e02e3550"
+        },
+        "webapp/public/eslint.png": {
+            "sha256": "033afba67b76ab1dc893b9d0c9ab67b86ff598c70b93d5ced11967bd2a3514e8"
+        },
+        "webapp/public/favicon.ico": {
+            "sha256": "9b2e9a38da573b5451663ee16c1baf6c0ce130e784851e71d967f9ef458e3b53"
+        },
+        "webapp/public/index.html": {
+            "sha256": "29688ef1da55376177e814b6988dfacac1ebbabe813d3fdc1dbaf04c6a648a48"
+        },
+        "webapp/public/logo.png": {
+            "sha256": "3a62d3f913e5e6f6b1c27d3baf2f1a6b8dd6634f928b9b2ccd2ac830f9320c62"
+        },
+        "webapp/public/react.png": {
+            "sha256": "112c51b6b10e40c4faf29a42206b48eb2373a355936c2a049ca14b534154860f"
+        },
+        "webapp/public/sad-docker.xcf": {
+            "sha256": "a3e33146eeb01ccaf72328f9196bc259285e6d2369d2c2791530693effd73b68"
+        },
+        "webapp/resources/apache.xcf": {
+            "sha256": "bb347fb8971e09aff7c45dca83258b185ceaeb5517d88afed38007f30a4c74ca"
+        },
+        "webapp/resources/debian.xcf": {
+            "sha256": "6966c98099ae6bce5c3aa306e7fffedc822ffae9c207f0e55ddeb7e2c0c59a8e"
+        },
+        "webapp/resources/docker.xcf": {
+            "sha256": "b8a9107c672b36f1c378ef2dc14fe7baf2e3cd87a7fe4745f8d6cc322d160ad4"
+        },
+        "webapp/resources/eslint.svg": {
+            "sha256": "72db2aa8d2e44dbc767c46a8f1c381381eb7d835f9873d6109102e98e2b410a4"
+        },
+        "webapp/resources/react.svg": {
+            "sha256": "812ff424a05c2bce20d3050776b71cd96194468e18ec6c8f6133ec42ccc3b111"
+        },
+        "webapp/src/App.cs": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "webapp/src/App.css": {
+            "sha256": "f12f12bf3e7a19a10bee2dd37b56811919d98354fe53db2caf914036437adca6"
+        },
+        "webapp/src/App.js": {
+            "sha256": "d31adfef70b90ce146d82c7fe5e4b1cc79bc5842c17046440c42ec66bf70d7d8"
+        },
+        "webapp/src/App.test.js": {
+            "sha256": "18619eea3c5e61ef2c39b582e2b3e03ebd4b2659a55b5a185884d7ba1b8a813b"
+        },
+        "webapp/src/index.css": {
+            "sha256": "fc0e34194449226c75ed41c1e084219109841f4e4ae375aa499bfbffe3061bc1"
+        },
+        "webapp/src/index.js": {
+            "sha256": "fc7a00aed7bb1ad9e478c05b9e535b923b4023437e45c46d3547520bbd4e11a2"
+        },
+        "webapp/src/logo.js": {
+            "sha256": "d4769dafde06591c0dc0ced584217b9ac3af9face38d22b1f55ea313685bc383"
+        },
+        "webapp/src/rotologo.js": {
+            "sha256": "ee25760f1f12ad23bc355cfe4586bfca7fd5a7c160d62b5fefaf0eeb01cb3fac"
+        }
+    },
+    "return_value": 1,
+    "signatures": [
+        {
+            "keyid": "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2",
+            "method": "RSASSA-PSS",
+            "sig": "48a1ef9c3ddcafac833490927aa7c1b13e4dcd724bb308f6fae985b9477d3a8075e35ae1ff09391283470646779a4ad1b83e4a8302521a6da1aa8199a7d7faa20f47e735ee21563860d9c4bedfda5d49ecde8099810319a0444ca5d8e2ec8e98f416d8e34793878f27dd126fd000c345fdee8b25210ee8b0ba155baf0475b04996cf70ddf911a42ac796057ebf21cfff39ea0f15142793709653d946552226f148fb9e83c22ea800a30906f1d54132a6aa9fa3e66356383f2d2605d8cff908403c129f1186e2ff35336ac47ac040af025c5e6243f193e9b3a8749df209c52d58320a183a9df7a5f4df6a75e6045971bdbbab1db828113091fc60c0b7758ec7a577e0a88e490182f7d38256c9e43aa723c7c56a856cb3ed77ebd18e1f7110116d0d9e739677a3e98c604cc55dac4cca7a94915b83f6eb1129b315016fa39b2854c907fe82d7f187b0795baf39ef6c551ba0123862995dfd39b8b14d8d0574c8c89a873933ca7fa998416b0e5b51e218b552c4db95e0bda440eda2437817fe0266"
+        }
+    ]
+}

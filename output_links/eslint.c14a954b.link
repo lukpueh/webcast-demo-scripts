@@ -1,0 +1,23 @@
+{
+    "_type": "link",
+    "byproducts": {
+        "stderr": "",
+        "stdout": ""
+    },
+    "command": [
+        "node",
+        "/home/santiago/Documents/p2017/in-toto-general/docker-demo/webapp/node_modules/eslint/bin/eslint.js",
+        "src/"
+    ],
+    "materials": {},
+    "name": "eslint",
+    "products": {},
+    "return_value": 0,
+    "signatures": [
+        {
+            "keyid": "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2",
+            "method": "RSASSA-PSS",
+            "sig": "89b278f4d86a98386f07f5f85cbe3e9dbcea5fcd28ed63b53dca93b9f370e952e237fa8d76902c46cf484eaa905e19049980b3fc98a62bf86fb52670aad25932a3f80c336695503aa5b33661bab220c6340fd380b3e7dc9c8cacbf724a8958e19f76d8ac69e6e2a9faf631b5ae42c50b3c3aa5ff7b31eb0ea27cb1f0fcf3c9baad9b6492a4668730bd63549bda2a7635d69d0bd60e6082bf9dae52f76d98b5bbbd4af22b0b8fc9f92a437486107d9cea75bb2b72fbc9f2791004a627d6ece4be4ce7c4e79375dc4b71c4e4989532a14f0b0866d6bde1849e7f5af91da1eb7e8ca32f78002373d604051363da6bc3f06ae5d411f25efa3f8557cc820dc83550960cb329f1d9c4fd776a652fd3c32ac7cb81e0dc1835852f76dff8b905b142c96dfc62e14560007852a3a821c6b9803abd0d9d2693526762815a6d88e5d858028de4fe27a2179dc590a2ee2fd0035a4355d1bccc3df610813b0eeea83ccb0447a7c6f0daad10dd0d8a175b015c711a0355ec8a0a2ca9c4bebdd2b516737a99ebee"
+        }
+    ]
+}

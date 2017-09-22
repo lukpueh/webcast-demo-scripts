@@ -1,0 +1,105 @@
+{
+    "_type": "layout",
+    "expires": "2017-05-18T14:16:54.524684Z",
+    "inspect": [],
+    "keys": {
+        "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2": {
+            "keyid": "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2",
+            "keytype": "rsa",
+            "keyval": {
+                "private": null,
+                "public": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAxoK1dIPqzvgBVEoA9JJU\nMqrvo0h1er5iI3i8Zsv7d2/Zr7kiNY0rwgUy2HOWR8I9GrfezwSQdPfe+1ALXe56\nhwAYm71oCsQ4TTTcf08TXntoXvNGeN+P3SsKJ6iw6HcYHyiqMuW8lpnDfd4mEPSe\nuv4ejNZzRHaMj1j9BX2Xi5lfEasLfsfKGdDhaOjsQm7Z1x5ONJFCeljtmr8FyiXV\n/0g2wUpa5nwdNYI9+DCorlvWV3z2xqotxzc5dfgGUN7Mz0MZP/qxNAEXV9cLNoQH\n5ijZUsCBnEbzg61HG9Dhw+TSDPKoz2MbRE0ick34YqdAqfGDfRDcOIQAG93guE1m\nle2/ZvP6VWdfPSPPXsRaKGUzxLlU7A5kPBhIcRzq6r2LoCVocT5b30XsaFuKzIrD\nF//k5sgu/hN5XCsWlp+p8h76h12IesPCTz7vFv6Em5aJvrOwkzUOR+Esn5aPjHij\nHvuH/RBcU8vJPEd0M6lcSg+OCOZ43nUUEQpqdHPaAiiNAgMBAAE=\n-----END PUBLIC KEY-----"
+            }
+        }
+    },
+    "signatures": [
+        {
+            "keyid": "bb7857ee75013cc32561526f790866ba61992c72b2f92963ea2056cedba47a52",
+            "method": "RSASSA-PSS",
+            "sig": "d3a90fbdb8f3bbe6ca10b9d9fcb9bcb454cf0d36e91ca07d3925763ae79d8aaf1adf5f383e57d2d0071700e566d5d43c52ac3512553b16e6028448017e85a5d0bb523ebaeeb8c22a498972b964d0cb3b8417e1f0bed10e692202cc91235fab3c9807a699ac4c439f62a577f26acebf6845d6ba98a22a28b1c30e3338d8401484a340b84a9ddd52cb4ca889d94ffe43c3513072c3f758735f58dbe925fcd9d8a0ee75be637bdd9aedc2fc1316538aef1edf0897a57e76057185fa4ba40469c4ede352569ab3f98fede74bb93d52ae7f2139bc0193a52b45ecd8fa2c27b640496fd1013b5db9e1d4e7eba88add766dac199930899e021a1a295804b0634d1d9c27c552d17688817b2ce2ad2a058e53127c3e5e8c1d7a57573009383dd75dcf35640b28f3f6b6137cf7b65693b3acec9de290c71e933fbd376946aa24acb9e6e4ff54ff6a61ab2b86617e5879ab0c283e2f0322c9fb258b065019c57d8a8d5f18883f88472519799178eb73d1d6da531b9d878b31187e5a3324f660d4386a2d7bfe"
+        }
+    ],
+    "steps": [
+        {
+            "_type": "step",
+            "expected_command": [
+                "git",
+                "tag"
+            ],
+            "material_matchrules": [],
+            "name": "tag-webapp",
+            "product_matchrules": [
+                [
+                    "CREATE",
+                    "src/*"
+                ],
+                [
+                    "CREATE",
+                    "public/*"
+                ]
+            ],
+            "pubkeys": [
+                "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2"
+            ],
+            "threshold": 1
+        },
+        {
+            "_type": "step",
+            "expected_command": [
+                "eslint",
+                "src/"
+            ],
+            "material_matchrules": [
+                [
+                    "MATCH",
+                    "PRODUCT",
+                    "src/*",
+                    "from",
+                    "tag-webapp:"
+                ]
+            ],
+            "name": "eslint",
+            "product_matchrules": [],
+            "pubkeys": [
+                "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2"
+            ],
+            "threshold": 1
+        },
+        {
+            "_type": "step",
+            "expected_command": [
+                "docker",
+                "build",
+                "."
+            ],
+            "material_matchrules": [
+                [
+                    "CREATE",
+                    "Dockerfile"
+                ],
+                [
+                    "MATCH",
+                    "*IN",
+                    "react-webapp",
+                    "WITH",
+                    "PRODUCTS",
+                    "IN",
+                    "build/*",
+                    "FROM",
+                    "build"
+                ]
+            ],
+            "name": "dockerize",
+            "product_matchrules": [
+                [
+                    "CREATE",
+                    "blah"
+                ]
+            ],
+            "pubkeys": [
+                "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2"
+            ],
+            "threshold": 1
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# this will mock git commands by wrapping in-toto run with default arguments
+KEY=/home/santiago/Documents/p2017/in-toto-general/docker-demo/in-toto-metadata/santiago
+ESLINT_PATH=/home/santiago/Documents/p2017/in-toto-general/docker-demo/webapp/node_modules/eslint/bin/eslint.js
+
+in-toto-run --step-name eslint --key $KEY --products webapp -- node $ESLINT_PATH $@ 

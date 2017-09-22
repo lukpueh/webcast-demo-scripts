@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# this will mock docker commands by calling docker_[command] in this same directory
+command_name=$1
+
+# these are the commands we are mocking, so serve them
+case "${command_name}" in
+    "run") docker_run.sh $@; exit 0;;
+    "pull") docker_pull.sh $@; exit 0;;
+    "build") docker_build.sh $@; exit 0;;
+esac
+
+# if we are not mocking a command, just fallback to the default 
+
+/usr/bin/docker $@ 

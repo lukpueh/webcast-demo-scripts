@@ -1,0 +1,95 @@
+{
+    "_type": "layout",
+    "expires": "2017-05-18T14:17:56Z",
+    "inspect": [],
+    "keys": {
+        "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2": {
+            "keyid": "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2",
+            "keytype": "rsa",
+            "keyval": {
+                "private": "",
+                "public": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAxoK1dIPqzvgBVEoA9JJU\nMqrvo0h1er5iI3i8Zsv7d2/Zr7kiNY0rwgUy2HOWR8I9GrfezwSQdPfe+1ALXe56\nhwAYm71oCsQ4TTTcf08TXntoXvNGeN+P3SsKJ6iw6HcYHyiqMuW8lpnDfd4mEPSe\nuv4ejNZzRHaMj1j9BX2Xi5lfEasLfsfKGdDhaOjsQm7Z1x5ONJFCeljtmr8FyiXV\n/0g2wUpa5nwdNYI9+DCorlvWV3z2xqotxzc5dfgGUN7Mz0MZP/qxNAEXV9cLNoQH\n5ijZUsCBnEbzg61HG9Dhw+TSDPKoz2MbRE0ick34YqdAqfGDfRDcOIQAG93guE1m\nle2/ZvP6VWdfPSPPXsRaKGUzxLlU7A5kPBhIcRzq6r2LoCVocT5b30XsaFuKzIrD\nF//k5sgu/hN5XCsWlp+p8h76h12IesPCTz7vFv6Em5aJvrOwkzUOR+Esn5aPjHij\nHvuH/RBcU8vJPEd0M6lcSg+OCOZ43nUUEQpqdHPaAiiNAgMBAAE=\n-----END PUBLIC KEY-----"
+            }
+        }
+    },
+    "signatures": [
+        {
+            "keyid": "bb7857ee75013cc32561526f790866ba61992c72b2f92963ea2056cedba47a52",
+            "method": "RSASSA-PSS",
+            "sig": "6d7f87371da2565359e6c6ac9aae95716f2d6b18e48f50e3b6f16f86ba36fe17632c5b250c2081885a10921f0b64d43b7ebe4daaceffe08e4d4e2e2d0a2bb1556f68e52c6aa3cf7c49d09ab7c330c829d797a033ac3b227c8fc24fad6a4ddb12ee9127b9a38d8e9aad38c00296a9cb6fef78ac8d640ec84d5269ebbdbe283bfeaa7cf818bec546f1147ffad52e5ac419f23b3a4bb80cbf361ec5b9db6fb0d77234f74e959f8e8664ecac09e811556b171ee308c0033f68806f9b3c4abcfa6e232423455916f1b1303b7c9cb54e58fcbb81867827cea4078f1557b47a876aefd1406d42834966b3e60ae948a468e2b7c85ada6703169727a19196d538e3973396e4ebdeac880f10df0d54e502916053b9a899d1b4f14890875df11ea89cfd838a1f173f6f3dc6299c6154cc06b1bd9831c1e6c89d2d6d170dccf85dd25f844d40f0c74650c322333e1e97eda715cdce246c744b3707a3849d0dd26b4c327a442ed0565cb3cf076cfda35f1f0755be797473bd0fc37cf3e5bf6f322b84f1637264"
+        }
+    ],
+    "steps": [
+        {
+            "_type": "step",
+            "expected_command": "git tag",
+            "material_matchrules": [],
+            "name": "tag-webapp",
+            "product_matchrules": [
+                [
+                    "CREATE",
+                    "src/*"
+                ],
+                [
+                    "CREATE",
+                    "public/*"
+                ]
+            ],
+            "pubkeys": [
+                "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2"
+            ],
+            "threshold": 1
+        },
+        {
+            "_type": "step",
+            "expected_command": "eslint src/",
+            "material_matchrules": [
+                [
+                    "MATCH",
+                    "PRODUCT",
+                    "src/*",
+                    "from",
+                    "tag-webapp:"
+                ]
+            ],
+            "name": "eslint",
+            "product_matchrules": [],
+            "pubkeys": [
+                "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2"
+            ],
+            "threshold": 1
+        },
+        {
+            "_type": "step",
+            "expected_command": "docker build .",
+            "material_matchrules": [
+                [
+                    "CREATE",
+                    "Dockerfile"
+                ],
+                [
+                    "MATCH",
+                    "*IN",
+                    "react-webapp",
+                    "WITH",
+                    "PRODUCTS",
+                    "IN",
+                    "build/*",
+                    "FROM",
+                    "build"
+                ]
+            ],
+            "name": "dockerize",
+            "product_matchrules": [
+                [
+                    "CREATE",
+                    "blah"
+                ]
+            ],
+            "pubkeys": [
+                "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2"
+            ],
+            "threshold": 1
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "_type": "Link",
+    "byproducts": {
+        "stderr": "",
+        "stdout": ""
+    },
+    "command": [
+        "docker",
+        "build",
+        "."
+    ],
+    "materials": {
+        "Dockerfile": {
+            "sha256": "2dac2f48b0d3945cd636ddf0a6c531f78ce100b2658812c98d318a54059f18f5"
+        },
+        "react-webapp/apache.png": {
+            "sha256": "277c6fb3fc56b7de17e54972f9cd82270a65dc59b99751f75522ed36ddde2364"
+        },
+        "react-webapp/asset-manifest.json": {
+            "sha256": "2539a91ee5032d26ed2d83242f844ca9654f87fb4ce17b2a66deae5d8e614f8c"
+        },
+        "react-webapp/debian.png": {
+            "sha256": "3bf11a7765b541082de1617a7063aa65854118047e4bffcac0681ab25855f0cd"
+        },
+        "react-webapp/docker.png": {
+            "sha256": "dd82202019d2bbc0296a655c19c05c58db40df9410b0ef2d1581e3d1e02e3550"
+        },
+        "react-webapp/eslint.png": {
+            "sha256": "033afba67b76ab1dc893b9d0c9ab67b86ff598c70b93d5ced11967bd2a3514e8"
+        },
+        "react-webapp/favicon.ico": {
+            "sha256": "9b2e9a38da573b5451663ee16c1baf6c0ce130e784851e71d967f9ef458e3b53"
+        },
+        "react-webapp/index.html": {
+            "sha256": "ddb1a359af84df2a5ee2f4fa654d0406f38149302d4d23df3f7dda27e12a33ab"
+        },
+        "react-webapp/logo.png": {
+            "sha256": "3a62d3f913e5e6f6b1c27d3baf2f1a6b8dd6634f928b9b2ccd2ac830f9320c62"
+        },
+        "react-webapp/react.png": {
+            "sha256": "112c51b6b10e40c4faf29a42206b48eb2373a355936c2a049ca14b534154860f"
+        },
+        "react-webapp/static/css/main.58bfa052.css": {
+            "sha256": "f849e727863792504b9ea5efd5b8168dbb4f376f21b58f078d6a325c8dbc417c"
+        },
+        "react-webapp/static/css/main.58bfa052.css.map": {
+            "sha256": "d75cafa180bb7b40626499082a5013ec49cf3148305b679fbdcde190effabcdd"
+        },
+        "react-webapp/static/js/main.416aa9d0.js": {
+            "sha256": "297845fb3af5c7258ad28df1630143ced872de8b3c46fb14a5ff0ba1f1095fae"
+        },
+        "react-webapp/static/js/main.416aa9d0.js.map": {
+            "sha256": "186aab8770f3df6bab180a0f705ea32d3750d51ecaad1076840b7560f4921b34"
+        }
+    },
+    "name": "dockerize",
+    "products": {},
+    "return_value": 0,
+    "signatures": [
+        {
+            "keyid": "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2",
+            "method": "RSASSA-PSS",
+            "sig": "194b1cd3900c7be626bec338167d6e3dc0bd6bb542cd85693933af2f3c6b7b63a5fcc43c53e297f0012d65b84cdee1e7a5c301aef652783aa3c2e3ed4241771aa952f648ef503d593eb74fb55ea303158933dd1151bd96c7da2099c900ae6b0c33101b007988ad5c2bc54517b0034ecc2b1099ce509e281c8df2782780fde28e3e64741cb4c559ebffda1ddd2869d015a59e32902164f04c44fd3626942b47f1770054282a7298f859a2fc6a79f0b51eb9e02fbc1859cda19bd6213e47b1190eed02f6944d5022e9ae251dc0ec227381f859fbee4b96d520a0f6625f036752eb81bff91793969119dcf8c3e7f22f59155754c195a87c53b2a13a7fef7ddeb129b6074bd8d7e02c61a3d71372c2d02ac5615434afe1274ee03def2289e9f682fe6d41c2efd0ab5361e52e7591b8967ada7b7e17f285aa85bf42ef6985296cb08b33748c336a80a8deeaadfcd2d05db31cdfd49761cd7b462e04114932f472947e554b33e3fd53f150bfe6a8e5aa7f4996d05b1c8211411dd22e06503b9d5476ea"
+        }
+    ]
+}

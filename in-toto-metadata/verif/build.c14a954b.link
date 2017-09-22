@@ -1,0 +1,112 @@
+{
+    "_type": "Link",
+    "byproducts": {
+        "stderr": "",
+        "stdout": ""
+    },
+    "command": [
+        "npm",
+        "run",
+        "build"
+    ],
+    "materials": {
+        "public/apache.png": {
+            "sha256": "277c6fb3fc56b7de17e54972f9cd82270a65dc59b99751f75522ed36ddde2364"
+        },
+        "public/debian.png": {
+            "sha256": "3bf11a7765b541082de1617a7063aa65854118047e4bffcac0681ab25855f0cd"
+        },
+        "public/docker.png": {
+            "sha256": "dd82202019d2bbc0296a655c19c05c58db40df9410b0ef2d1581e3d1e02e3550"
+        },
+        "public/eslint.png": {
+            "sha256": "033afba67b76ab1dc893b9d0c9ab67b86ff598c70b93d5ced11967bd2a3514e8"
+        },
+        "public/favicon.ico": {
+            "sha256": "9b2e9a38da573b5451663ee16c1baf6c0ce130e784851e71d967f9ef458e3b53"
+        },
+        "public/index.html": {
+            "sha256": "29688ef1da55376177e814b6988dfacac1ebbabe813d3fdc1dbaf04c6a648a48"
+        },
+        "public/logo.png": {
+            "sha256": "3a62d3f913e5e6f6b1c27d3baf2f1a6b8dd6634f928b9b2ccd2ac830f9320c62"
+        },
+        "public/react.png": {
+            "sha256": "112c51b6b10e40c4faf29a42206b48eb2373a355936c2a049ca14b534154860f"
+        },
+        "src/App.cs": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "src/App.css": {
+            "sha256": "07834ebeeea5ba42d84b02cb03f1533031eb901cf9894c3025e475e70be4a95f"
+        },
+        "src/App.js": {
+            "sha256": "fe3305cad2780e43e377805a6ad528bb0e66143ca6542b203c8603dc2c2ffd7c"
+        },
+        "src/App.test.js": {
+            "sha256": "18619eea3c5e61ef2c39b582e2b3e03ebd4b2659a55b5a185884d7ba1b8a813b"
+        },
+        "src/index.css": {
+            "sha256": "fc0e34194449226c75ed41c1e084219109841f4e4ae375aa499bfbffe3061bc1"
+        },
+        "src/index.js": {
+            "sha256": "fc7a00aed7bb1ad9e478c05b9e535b923b4023437e45c46d3547520bbd4e11a2"
+        },
+        "src/logo.js": {
+            "sha256": "d4769dafde06591c0dc0ced584217b9ac3af9face38d22b1f55ea313685bc383"
+        },
+        "src/rotologo.js": {
+            "sha256": "ee25760f1f12ad23bc355cfe4586bfca7fd5a7c160d62b5fefaf0eeb01cb3fac"
+        }
+    },
+    "name": "build",
+    "products": {
+        "build/apache.png": {
+            "sha256": "277c6fb3fc56b7de17e54972f9cd82270a65dc59b99751f75522ed36ddde2364"
+        },
+        "build/asset-manifest.json": {
+            "sha256": "2539a91ee5032d26ed2d83242f844ca9654f87fb4ce17b2a66deae5d8e614f8c"
+        },
+        "build/debian.png": {
+            "sha256": "3bf11a7765b541082de1617a7063aa65854118047e4bffcac0681ab25855f0cd"
+        },
+        "build/docker.png": {
+            "sha256": "dd82202019d2bbc0296a655c19c05c58db40df9410b0ef2d1581e3d1e02e3550"
+        },
+        "build/eslint.png": {
+            "sha256": "033afba67b76ab1dc893b9d0c9ab67b86ff598c70b93d5ced11967bd2a3514e8"
+        },
+        "build/favicon.ico": {
+            "sha256": "9b2e9a38da573b5451663ee16c1baf6c0ce130e784851e71d967f9ef458e3b53"
+        },
+        "build/index.html": {
+            "sha256": "ddb1a359af84df2a5ee2f4fa654d0406f38149302d4d23df3f7dda27e12a33ab"
+        },
+        "build/logo.png": {
+            "sha256": "3a62d3f913e5e6f6b1c27d3baf2f1a6b8dd6634f928b9b2ccd2ac830f9320c62"
+        },
+        "build/react.png": {
+            "sha256": "112c51b6b10e40c4faf29a42206b48eb2373a355936c2a049ca14b534154860f"
+        },
+        "build/static/css/main.58bfa052.css": {
+            "sha256": "f849e727863792504b9ea5efd5b8168dbb4f376f21b58f078d6a325c8dbc417c"
+        },
+        "build/static/css/main.58bfa052.css.map": {
+            "sha256": "d75cafa180bb7b40626499082a5013ec49cf3148305b679fbdcde190effabcdd"
+        },
+        "build/static/js/main.416aa9d0.js": {
+            "sha256": "297845fb3af5c7258ad28df1630143ced872de8b3c46fb14a5ff0ba1f1095fae"
+        },
+        "build/static/js/main.416aa9d0.js.map": {
+            "sha256": "186aab8770f3df6bab180a0f705ea32d3750d51ecaad1076840b7560f4921b34"
+        }
+    },
+    "return_value": 0,
+    "signatures": [
+        {
+            "keyid": "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2",
+            "method": "RSASSA-PSS",
+            "sig": "b64e6691682139650b4820f22c071567e42367e70a4c71ecd312d76a3c42fc0f7103e72256554eb48f3dff3fb6df5e8640e42cca7f2fb36f3ff98e669bff44879d53ffe0801ea8559d34732fc96fab12b012df0a7d0965871c0c11c8bfccea5e10d30084862d172fc3d8ceece11bb9ed872a905a4d3d140fde81f146727e9eec36e99d3a8c9bdccc8ce40153a40eebdedc4e3e0ef89e4ecc115409c8fdcef3b02f4fa833a4f5123e61d7ce75d5371a3eb933a3ca2fb557d7d52dcdcfafc258e5fd437ebc73be640a8f8976b4d9a6165011b687791ca7b21cca20e04e5f07c83c750673eafbf2c8bd508ae132cd1372bf5f3b730f2b9a3d6e3f1aa8262cdf61ba88b5d7d6f300636a155c439066953983edddde9b39230ec96d331f203b34e7f68fc863dff503319ef61b77284a99c13c45eeb159b9aa004225264f0a68d58c09381a7f118d69054c2916c4880b7688566dc5baed99e4d7d593e9d24249984c514fcaa1a01df8d8b37b4da90137ffc8f1a24a9e2aab4623e27100d9300d909219"
+        }
+    ]
+}

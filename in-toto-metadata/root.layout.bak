@@ -1,0 +1,122 @@
+{
+    "_type": "layout",
+    "expires": "2017-05-18T12:33:26.501060Z",
+    "inspect": [],
+    "keys": {
+        "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2": {
+            "keyid": "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2",
+            "keytype": "rsa",
+            "keyval": {
+                "private": "",
+                "public": "-----BEGIN PUBLIC KEY-----\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAxoK1dIPqzvgBVEoA9JJU\nMqrvo0h1er5iI3i8Zsv7d2/Zr7kiNY0rwgUy2HOWR8I9GrfezwSQdPfe+1ALXe56\nhwAYm71oCsQ4TTTcf08TXntoXvNGeN+P3SsKJ6iw6HcYHyiqMuW8lpnDfd4mEPSe\nuv4ejNZzRHaMj1j9BX2Xi5lfEasLfsfKGdDhaOjsQm7Z1x5ONJFCeljtmr8FyiXV\n/0g2wUpa5nwdNYI9+DCorlvWV3z2xqotxzc5dfgGUN7Mz0MZP/qxNAEXV9cLNoQH\n5ijZUsCBnEbzg61HG9Dhw+TSDPKoz2MbRE0ick34YqdAqfGDfRDcOIQAG93guE1m\nle2/ZvP6VWdfPSPPXsRaKGUzxLlU7A5kPBhIcRzq6r2LoCVocT5b30XsaFuKzIrD\nF//k5sgu/hN5XCsWlp+p8h76h12IesPCTz7vFv6Em5aJvrOwkzUOR+Esn5aPjHij\nHvuH/RBcU8vJPEd0M6lcSg+OCOZ43nUUEQpqdHPaAiiNAgMBAAE=\n-----END PUBLIC KEY-----"
+            }
+        }
+    },
+    "signatures": [
+    ],
+    "steps": [
+        {
+            "_type": "step",
+            "expected_command": "git tag",
+            "material_matchrules": [],
+            "name": "tag-webapp",
+            "product_matchrules": [
+                [
+                    "CREATE",
+                    "src/*"
+                ],
+                [
+                    "CREATE",
+                    "public/*"
+                ]
+            ],
+            "pubkeys": [
+                "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2"
+            ],
+            "threshold": 1
+        },
+        {
+            "_type": "step",
+            "expected_command": "npm run build",
+            "material_matchrules": [
+                [
+                    "MATCH",
+                    "src/*",
+                    "WITH",
+                    "PRODUCTS",
+                    "FROM",
+                    "tag-webapp"
+                ],
+                [
+                    "MATCH",
+                    "public/*",
+                    "WITH",
+                    "PRODUCTS",
+                    "FROM",
+                    "tag-webapp"
+                ]
+            ],
+            "name": "build",
+            "product_matchrules": [
+                [
+                    "CREATE",
+                    "build/*"
+                ]
+            ],
+            "pubkeys": [
+                "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2"
+            ],
+            "threshold": 1
+        },
+
+        {
+            "_type": "step",
+            "expected_command": "eslint src/",
+            "material_matchrules": [
+                [
+                    "MATCH",
+                    "src/*",
+                    "WITH",
+                    "PRODUCTS",
+                    "FROM",
+                    "tag-webapp"
+                ]
+            ],
+            "name": "eslint",
+            "product_matchrules": [],
+            "pubkeys": [
+                "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2"
+            ],
+            "threshold": 1
+        },
+        {
+            "_type": "step",
+            "expected_command": "docker build .",
+            "material_matchrules": [
+                [
+                    "ALLOW",
+                    "Dockerfile"
+                ],
+                [
+                    "MATCH",
+                    "*",
+                    "IN",
+                    "react-webapp",
+                    "WITH",
+                    "PRODUCTS",
+                    "IN",
+                    "build",
+                    "FROM",
+                    "build"
+                ]
+            ],
+            "name": "dockerize",
+            "product_matchrules": [
+            ],
+            "pubkeys": [
+                "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2"
+            ],
+            "threshold": 1
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "_type": "Link",
+    "byproducts": {
+        "stderr": "",
+        "stdout": ""
+    },
+    "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "src/"
+    ],
+    "materials": {
+        "src/App.cs": {
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "src/App.css": {
+            "sha256": "07834ebeeea5ba42d84b02cb03f1533031eb901cf9894c3025e475e70be4a95f"
+        },
+        "src/App.js": {
+            "sha256": "fe3305cad2780e43e377805a6ad528bb0e66143ca6542b203c8603dc2c2ffd7c"
+        },
+        "src/App.test.js": {
+            "sha256": "18619eea3c5e61ef2c39b582e2b3e03ebd4b2659a55b5a185884d7ba1b8a813b"
+        },
+        "src/index.css": {
+            "sha256": "fc0e34194449226c75ed41c1e084219109841f4e4ae375aa499bfbffe3061bc1"
+        },
+        "src/index.js": {
+            "sha256": "fc7a00aed7bb1ad9e478c05b9e535b923b4023437e45c46d3547520bbd4e11a2"
+        },
+        "src/logo.js": {
+            "sha256": "d4769dafde06591c0dc0ced584217b9ac3af9face38d22b1f55ea313685bc383"
+        },
+        "src/rotologo.js": {
+            "sha256": "ee25760f1f12ad23bc355cfe4586bfca7fd5a7c160d62b5fefaf0eeb01cb3fac"
+        }
+    },
+    "name": "eslint",
+    "products": {},
+    "return_value": 1,
+    "signatures": [
+        {
+            "keyid": "c14a954b8db359394432d7cb917a950752f59bd09d89a9d03cdf688571881bb2",
+            "method": "RSASSA-PSS",
+            "sig": "bd44135e19b96bce94f3ffefae3f9fe1b4baa231683ff9eb19f82543831fdef34f23b43ed563eb1462336fdd5084e28006e406773a9b45e5380485a72cd58a841edad54aafffc49bf6844bb09fc9d71f92ad75e2ce3bafc9eb6a381a59cebed50b3f5d821cad4542dbe5a8c42c0ef30383b63d80a32bde6f753953dcd9e160f7eb01ebc68847a5ea15bbb9c796e2c08a907f9cdde12677bad88bcc7cfe72aa00f27a7a29eb903801c2019a52660541d1fd41e41ece147e1a36f14f55f8e4e9198730b4695abc80faec35faf3d799debe2982100dca4dd9fc287f9f46cddf3c5170ada0afea11abac0c790d8962c9d25dcfc2fa6ab8ea13ff70320e8e4600dfc4af4947277d9f044b39a0225c4a52bf59433380bad65f6c97037caecfdc15177f1f9540afdd5a986c3d7218c10ba0d5f5357409bca4b1a7500775e55b733cbf10496717afaaafe78f600664207838a4fe0bdf7b4b577305bac7921d2416b25f1d20845f15735844557398263ad8fe3639277b5eb6b906d765cceecea54d5a07b5"
+        }
+    ]
+}
