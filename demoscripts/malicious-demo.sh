@@ -1,7 +1,7 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 set -x
-cd /home/santiago/Documents/p2017/in-toto-general/docker-demo/
+cd $DEMO_PATH
 if [ -e workbench ]
 then
     rm -rf workbench
@@ -10,7 +10,7 @@ fi
 mkdir -vp workbench && cd workbench
 
 echo "cloning source-code repository"
-cp -r ../webapp . && cd webapp && git reset --hard badstuff
+cp -r ../webapp . && cd webapp && git reset --hard bad
 
 #echo "building running eslint..."
 # eslint src/
@@ -27,4 +27,4 @@ fi
 cp -r build ../docker_image/react-webapp
 
 cd ../docker_image && docker build -t in-toto-pwnt-but-dockerized .
-docker run -p 8080:80 -t in-toto-pwnt-but-dockerized 
+docker run -p 8080:80 -t in-toto-pwnt-but-dockerized

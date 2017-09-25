@@ -10,6 +10,5 @@ case "${command_name}" in
     "build") docker_build.sh $@; exit 0;;
 esac
 
-# if we are not mocking a command, just fallback to the default 
-
-/usr/bin/docker $@ 
+# if we are not mocking a command, just fallback to the default
+${DOCKER} $@

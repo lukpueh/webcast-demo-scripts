@@ -1,30 +1,30 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 set -x
-cd /home/santiago/Documents/p2017/in-toto-general/docker-demo/
+cd $DEMO_PATH
 if [ -e workbench ]
 then
     rm -rf workbench
 fi
 
 mkdir -vp workbench && cd workbench
+# Needs -R not -r to preserve relative symbolic links, e.g. in
+# `node_module/.bin` otherwise npm run build breaks mysteriously
+cp -R ../webapp . && cd webapp
+
+echo "tagging release"
+git tag -m tag v1.0 1.0
 
 echo "cloning source-code repository"
-cp -r ../webapp . && cd webapp
 
-#echo "building running eslint..."
-# eslint src/
+echo "building running eslint..."
+eslint src/
 
 echo "building react app"
 npm run build
 
 echo "dockerizing image"
-cp -r ../../docker_image  ../
-if [ -e ../docker_image/react-webapp ]
-then
-    rm -rf ../docker_image/react-webapp
-fi
-cp -r build ../docker_image/react-webapp
+cp ../../demoscripts/Dockerfile .
 
-cd ../docker_image && docker build -t in-toto-dockerized .
-docker run -p 8080:80 -t in-toto-dockerized 
+docker build -t in-toto-dockerized .
+docker run -p 8080:80 -t in-toto-dockerized

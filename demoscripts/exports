@@ -1,0 +1,13 @@
+export DEMO_PATH=/Users/lukp/webcast-demo-scripts
+
+export KEY=${DEMO_PATH}/in-toto-metadata/santiago
+export LAYOUT_PATH=${DEMO_PATH}/in-toto-metadata/root.layout
+export JUSTIN_PUB=${DEMO_PATH}/in-toto-metadata/justin.pub
+export OUTPUT_LINKS=${DEMO_PATH}/in-toto-metadata/verif/*.links
+
+export ESLINT=${DEMO_PATH}/workbench/webapp/node_modules/eslint/bin/eslint.js
+export GIT=$(which git)
+export NPM=$(which npm)
+export DOCKER=$(which docker)
+
+export PATH=/Users/lukp/webcast-demo-scripts/demoscripts:$PATH

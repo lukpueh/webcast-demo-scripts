@@ -1,6 +1,4 @@
 #!/bin/sh
 
 # this will mock git commands by wrapping in-toto run with default arguments
-KEY=/home/santiago/Documents/p2017/in-toto-general/docker-demo/in-toto-metadata/santiago
-
-in-toto-run --step-name build  --key $KEY --materials . --products build -- /usr/bin/npm $@ 
+in-toto-run --step-name build  --key $KEY --materials public src --products build -- ${NPM} $@
